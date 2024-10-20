@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cara Kerja Internet</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Cara Kerja Internet</h1>
+      <nav>
+        <ul>
+          <li><a href="#internet">Cara Kerja Internet Secara Umum</a></li>
+          <li><a href="#http-https">HTTP dan HTTPS</a></li>
+          <li><a href="#domain">Nama Domain</a></li>
+          <li><a href="#hosting">Hosting</a></li>
+          <li><a href="#dns">DNS</a></li>
+          <li><a href="#browser">Browser</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Section Cara Kerja Internet -->
+      <section id="internet">
+        <h2>Cara Kerja Internet Secara Umum</h2>
+        <img src="src/Internet2.png" alt="Internet" />
+        <p>
+          Internet adalah jaringan global yang menghubungkan miliaran perangkat
+          di seluruh dunia. Internet bekerja dengan mengirimkan data dalam
+          bentuk paket melalui serangkaian jaringan komputer. Setiap perangkat
+          yang terhubung memiliki alamat IP unik yang digunakan untuk
+          mengidentifikasi perangkat tersebut.
+        </p>
+        <p>
+          Referensi:
+          <a href="https://id.wikipedia.org/wiki/Internet"
+            >Wikipedia - Internet</a
+          >
+        </p>
+      </section>
+      <!-- Section HTTP dan HTTPS -->
+      <section id="http-https">
+        <h2>HTTP dan HTTPS</h2>
+        <img src="src/HTTP_HTTPS.png" alt="Ilustrasi HTTP dan HTTPS" />
+        <p>
+          HTTP (HyperText Transfer Protocol) adalah protokol yang digunakan
+          untuk mengirimkan data antara browser dan server. Data yang dikirimkan
+          melalui HTTP tidak dienkripsi, sehingga dapat dilihat oleh pihak
+          ketiga.
+        </p>
+        <p>
+          HTTPS (HyperText Transfer Protocol Secure) adalah versi aman dari HTTP
+          yang menggunakan enkripsi SSL/TLS untuk melindungi data saat
+          ditransfer antara browser dan server.
+        </p>
+        <p>
+          Referensi:
+          <a href="https://developer.mozilla.org/id/docs/Web/HTTP"
+            >MDN Web Docs - HTTP</a
+          >
+        </p>
+      </section>
+
+      <!-- Section Nama Domain -->
+      <section id="domain">
+        <h2>Nama Domain</h2>
+        <img src="src/domain.png" alt="Ilustrasi Nama Domain" />
+        <p>
+          Nama domain adalah alamat unik yang digunakan untuk mengakses situs
+          web di internet. Domain memudahkan pengguna dalam mengakses website
+          tanpa harus mengingat alamat IP yang sulit dihafal.
+        </p>
+        <p>
+          Referensi:
+          <a href="https://id.wikipedia.org/wiki/Nama_domain"
+            >Wikipedia - Nama Domain</a
+          >
+        </p>
+      </section>
+
+      <!-- Section Hosting -->
+      <section id="hosting">
+        <h2>Hosting</h2>
+        <img src="src/hosting.png" alt="Ilustrasi Hosting" />
+        <p>
+          Hosting adalah layanan yang menyediakan tempat untuk menyimpan semua
+          file dan data situs web Anda, sehingga dapat diakses melalui internet.
+          Hosting biasanya disediakan oleh perusahaan penyedia hosting web.
+        </p>
+        <p>
+          Referensi:
+          <a href="https://www.hostinger.co.id/tutorial/apa-itu-web-hosting"
+            >Hostinger - Apa itu Web Hosting</a
+          >
+        </p>
+      </section>
+
+      <!-- Section DNS -->
+      <section id="dns">
+        <h2>DNS</h2>
+        <img src="src/dns.png" alt="Ilustrasi DNS" />
+        <p>
+          DNS (Domain Name System) adalah sistem yang mengubah nama domain
+          menjadi alamat IP yang bisa dimengerti oleh komputer. DNS bekerja
+          seperti buku telepon yang menerjemahkan nama domain menjadi alamat IP
+          yang sesuai.
+        </p>
+        <p>
+          Referensi:
+          <a href="https://id.wikipedia.org/wiki/Sistem_penamaan_domain"
+            >Wikipedia - DNS</a
+          >
+        </p>
+      </section>
+
+      <!-- Section Browser -->
+      <section id="browser">
+        <h2>Browser</h2>
+        <img src="src/browser.png" alt="Ilustrasi Browser" />
+        <p>
+          Browser adalah aplikasi perangkat lunak yang digunakan untuk mengakses
+          dan menampilkan halaman web di internet. Browser bekerja dengan
+          mengirimkan permintaan HTTP atau HTTPS ke server dan menampilkan
+          konten yang dikirimkan oleh server.
+        </p>
+        <p>
+          Referensi:
+          <a
+            href="https://developer.mozilla.org/id/docs/Learn/Common_questions/How_does_a_web_browser_work"
+            >MDN Web Docs - Cara Kerja Browser</a
+          >
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 M Mirsa Bintang</p>
+    </footer>
+  </body>
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+      anchor.addEventListener("click", function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute("href")).scrollIntoView({
+          behavior: "smooth",
+        });
+      });
+    });
+  </script>
+</html>
